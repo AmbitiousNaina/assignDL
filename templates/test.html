@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification using Flask API</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-container">
+            <h1>Image Classification using Convolutional Neural Network (CNN)</h1>
+            <p class="description">(Upload an image file for classification. The model will predict the class of the image.)</p>
+
+            <!-- Form for uploading image -->
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <label for="file" class="file-label">Choose Image File</label>
+                <input type="file" name="file" id="file" accept="image/*" required>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+
+            
+        </div>
+    </div>
+</body>
+</html>

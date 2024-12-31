@@ -1,0 +1,131 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main container to center the content */
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Description and result text styling */
+.description, .result-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Styling for the file input field */
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Label styling for the file input */
+.file-label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Result section styling */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    display: none;  /* Initially hidden */
+    color: #333;
+}
+
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Go Back link styling */
+.go-back-link {
+    font-size: 16px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Go Back link hover effect */
+.go-back-link:hover {
+    color: #45a049;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 500px) {
+    .main-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description, .result-text {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
